@@ -1,0 +1,69 @@
+@media (max-width: 1199px)
+  .container
+    width: 970px
+
+@media (max-width: 992px)
+  .container
+    width: 767px
+    margin: auto
+  .main
+    &__title
+      font-size: 30px
+      line-height: 1.2
+    &__img
+      transform: none
+  .feedback
+    // background: #ffffff
+    background-image: none
+    &:before
+      display: none
+  .form
+    margin: 0 auto 0
+    &__title
+      text-align: center
+    &__input
+      width: 100%
+
+
+@media (max-width: 768px)
+  .container
+    width: 95%
+    margin: auto
+  .hidden-xl
+    display: none
+  .main
+    &-wrap
+      flex-direction: column
+    &__text-block
+      max-width: 400px
+      margin: auto
+    &__title, &__subtitle
+      text-align: center
+  .header-text__phone
+    font-size: 14px
+
+@media (max-width: 480px)
+  .container
+    width: 95%
+  .header-logo
+    width: 100px
+  .header-text
+    &__phone
+      font-size: 12px
+    &__city
+      font-size: 10px
+    &__button button
+      padding: 18px
+  .feedback
+    .form
+      &__help-inf
+        font-size: 12px
+      &__callback_icon
+        width: 20px
+        height: 20px
+        background-size: 10px
+      &__callback_text
+        margin-left: 10px
+        max-width: 160px
+      &__manager-connect
+        max-width: 130px

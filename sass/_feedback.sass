@@ -1,11 +1,20 @@
 .feedback
   padding: 94px 0
-  background:
-    image: url('../img/design-project.png')
-    // size: 50%
-    position: right
-    repeat: no-repeat
-    position: right
+  background: url('../img/design-project.png') no-repeat center left 700px
+  background-size: contain
+  // transform: scale(1.1)
+  position: relative
+  z-index: 1
+  &:before
+    content: ''
+    left: 0
+    top: 0
+    width: 60%
+    height: 100%
+    background-color: #ffffff
+    position: absolute
+    z-index: -1
+
 .form
   max-width: 575px
   &__title
@@ -28,19 +37,37 @@
     padding: 28px
     display: block
     width: 100%
+    margin-bottom: 31px
   &__help-inf
     width: 100%
     display: flex
     justify-content: space-between
+    font-size: 15px
   &__manager-connect
     width: 224px
-    font-size: 15px
     line-height: 1.6
-  
+    margin: 0
+    display: inline-block
+  &__callback
+    display: flex
+    flex-direction: row
+  &__callback_icon
+      width: 40px
+      height: 40px
+      border: 2px solid #cccccc
+      border-radius: 50%
+      background-size: 15px
+      background-repeat: no-repeat
+      background-position: center
+      background-image: url('../img/phone-receiver.png')
+
   &__callback_text
     width: 189px
-    margin-right: 22px
-    font-size: 15px
+    margin:
+      top: 0
+      left: 30px
+      bottom: 0
     line-height: 1.6
     span
       +bold
+    
