@@ -1,0 +1,107 @@
+.modal
+  display: none
+  width: 100%
+  height: 100%
+  position: fixed
+  background-color: rgba(#000, 0.52)
+  left: 0
+  top: 0
+  z-index: 2
+  &_visible
+    display: flex
+  &__dialog
+    width: 1170px
+    background-color: #ffffff
+    margin: auto
+    position: relative
+    display: flex
+  &__close
+    position: absolute
+    top: 5px
+    right: 5px
+    &:hover
+      cursor: pointer
+  &__left-block
+    width: 600px
+    height: 100%
+    background-color: #f7f7f7
+    padding:
+      top: 60px
+      bottom: 50px
+    display: flex
+    flex-direction: column
+  &__left-container
+    margin:
+      left: auto
+      right: auto
+  &__image-block
+    display: flex
+    align-content: center
+    margin-bottom: 15px
+  &__image-text
+    margin-left: 29px
+    p
+      font-size: 16px
+      line-height: 22px
+      span
+        font-weight: bold
+  &__image-title
+    font:
+      size: 16px
+      weight: 600
+    margin-bottom: 12x
+    hr
+      margin-top: 13px
+  &__price-items
+    margin-top: 53px
+    padding: 0
+    h4
+      font-size: 14px
+      font-weight: bold
+    li
+      color: $primary-color
+      margin-left: 14px
+      padding-left: 6px
+      span
+        color: $text-color
+        font-size: 14px
+        line-height: 1.79
+  
+  &__right-block
+    width: 570px
+    padding:
+      top: 60px
+      bottom: 48px
+    // display: block
+    text-align: center
+    display: flex
+    flex-direction: column
+    // justify-content: center
+    align-items: center
+    h3
+      margin:
+        top: 0
+        bottom: 52px
+      // display: inline
+      font:
+        size: 22px
+        weight: bold
+      line-height: 1.5
+      width: 294px
+  &__input
+    width: 370px
+    margin-bottom: 15px
+  &__button
+    width: 370px
+    height: 70px
+    margin:
+      top: 15px
+      bottom: 33px
+  &__callback-text
+    margin: 0
+    width: 290px
+    span
+      font-size: 20px
+
+
+@import 'modal-media'

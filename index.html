@@ -5,7 +5,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+  <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <script src="js/script.js"></script>
 </head>
 <body>
   <header class="header">
@@ -19,60 +24,145 @@
           <a class="header-text__phone" href="tel: +74954225131">+7 (495) 42-251-31</a>
         </div>
         <div class="header-text__button">
-          <button class="button">Перезвоните <span class="hidden-xl">мне</span></button>
+          <button class="button button-callback">Перезвоните <span class="hidden-xl">мне</span></button>
         </div>
       </div>
     </div>
   </header> <!--Шапка сайта-->
 <!--/////////////////////////////////////////////////// -->
 
-<section class="main">
-  <div class="container main-wrap">
-    <div class="main__text-block">
-      <h1 class="main__title">Внутренняя отделка помещений "под&nbsp;ключ"</h1>
-      <p class="main__subtitle">с гарантией качества, прописанной в&nbsp;договоре</p>
-      <div class="main__advantages">
-        <div class="main__advantages-item">
-          <div class="main__advantages-icon icon-clock"></div>
-          <p class="main__advantages-text">Точно соблюдаем сроки</p>
-        </div> <!--Подблок с иконкой и описанием-->
-        <div class="main__advantages-item">
-          <div class="main__advantages-icon icon-calc"></div>
-          <p class="main__advantages-text">Рассчитаем смету на работы и материалы в день обращения</p>
-        </div> <!--Подблок с иконкой и описанием-->
-        <div class="main__advantages-item">
-          <div class="main__advantages-icon icon-art"></div>
-          <p class="main__advantages-text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</p>
-        </div> <!--Подблок с иконкой и описанием-->  
-      </div> <!--Блок с иконками и описанием-->
-    </div> <!--Левый блок с заголовком и иконками-->
-    <div class="main__img">
-      <img src="img/main/main-image.png" alt="Внутренняя отделка">
-    </div> <!--Првый блок с большой картинкой-->
-  </div> <!--Блок контейнер main-->
-</section> <!--главная страница-->
-<!-- /////////////////////////////////////////////////// -->
+  <section class="main">
+    <div class="container main-wrap">
+      <div class="main__text-block">
+        <h1 class="main__title">Внутренняя отделка помещений "под&nbsp;ключ"</h1>
+        <p class="main__subtitle">с гарантией качества, прописанной в&nbsp;договоре</p>
+        <div class="main__advantages">
+          <div class="main__advantages-item">
+            <div class="main__advantages-icon icon-clock"></div>
+            <p class="main__advantages-text">Точно соблюдаем сроки</p>
+          </div> <!--Подблок с иконкой и описанием-->
+          <div class="main__advantages-item">
+            <div class="main__advantages-icon icon-calc"></div>
+            <p class="main__advantages-text">Рассчитаем смету на работы и материалы в день обращения</p>
+          </div> <!--Подблок с иконкой и описанием-->
+          <div class="main__advantages-item">
+            <div class="main__advantages-icon icon-art"></div>
+            <p class="main__advantages-text">Предложим более 100 вариантов исполнения дизайна Вашего жилья</p>
+          </div> <!--Подблок с иконкой и описанием-->  
+        </div> <!--Блок с иконками и описанием-->
+      </div> <!--Левый блок с заголовком и иконками-->
+      <div class="main__img">
+        <img src="img/main/main-image.png" alt="Внутренняя отделка">
+      </div> <!--Првый блок с большой картинкой-->
+    </div> <!--Блок контейнер main-->
+  </section> <!--главная страница-->
+  <!-- /////////////////////////////////////////////////// -->
 
-<section class="feedback">
-  <div class="container feedback-wrap">
-    <div class="form">
-      <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и&nbsp;реализуем&nbsp;его!</h2>
-      <p class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
-      <form action="#" id="form_id">
-        <input type="text" class="input input-name form__input" placeholder="Ваше имя">
-        <input type="tel" class="input input-tel form__input" pattern="7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" placeholder="Тел.: 7-999-99-99-999">
-      </form>
-      <button class="button form__button" form="form_id" type="submit">Получить бесплатный дизайн-проект</button>
-      <div class="form__help-inf">
-        <p class="form__manager-connect">Наш менеджер перезвонит Вам в течение 60 секунд</p>
-        <div class="form__callback">
-          <div class="form__callback_icon"></div>
-          <p class="form__callback_text">или перезвоните нам сами <span class="form__callback_tel">+7 (495) 42-251-31</span></p>
+  <section class="feedback">
+    <div class="container feedback-wrap">
+      <div class="form">
+        <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и&nbsp;реализуем&nbsp;его!</h2>
+        <p class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
+        <form action="#" id="form_id">
+          <input type="text" class="input input-name form__input" placeholder="Ваше имя">
+          <input type="tel" class="input input-tel form__input" pattern="7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" placeholder="Тел.: 7-999-99-99-999">
+        </form>
+        <button class="button form__button" form="form_id" type="submit">Получить бесплатный дизайн-проект</button>
+        <div class="form__help-inf">
+          <p class="form__manager-connect">Наш менеджер перезвонит Вам в течение 60 секунд</p>
+          <div class="form__callback">
+            <div class="form__callback_icon"></div>
+            <p class="form__callback_text">или перезвоните нам сами <span class="form__callback_tel">+7 (495) 42-251-31</span></p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+    
+  </section> <!--Форма предложением-->
 
-</section> <!--Форма предложением-->
+  <section class="portfolio">
+    <div class="container portfolio__container">
+      <h2 class="section-title portfolio__section-title">Работая с 2007 года,<br>мы сделали более 500 ремонтов в квартирах и домах</h2>
+      <div class="portfolio__slider">
+        <div class="portfolio__slider-item"><img src="portfolio/slider-image-1.jpeg" alt=""></div>
+        <div class="portfolio__slider-item"><img src="portfolio/slider-image-2.jpeg" alt=""></div>
+        <div class="portfolio__slider-item"><img src="portfolio/slider-image-3.jpeg" alt=""></div>
+        <div class="portfolio__slider-item"><img src="portfolio/slider-image-1.jpeg" alt=""></div>
+        <div class="portfolio__slider-item"><img src="portfolio/slider-image-2.jpeg" alt=""></div>
+        <div class="portfolio__slider-item"><img src="portfolio/slider-image-3.jpeg" alt=""></div>
+      </div>
+
+    </div> <!--Portfolio_container-->
+
+  </section> <!--Portfolio-->  
+
+
+
+
+
+  <div class="modal" id="modal-callback">
+    <div class="modal__dialog"">
+      <div class="modal__left-block">
+        <div class="modal__left-container">
+          <div class="modal__image-block bath">
+            <img src="img/modal/bath.jpeg" alt="Ванная комната">
+            <div class="modal__image-text">
+              <div class="modal__image-title">Ванная комната<hr size=2px width=42px align="left" color=#ffd200></div>
+              <p>135*150 - <span>31 000 руб.</span><br>170*170 - <span>43 000 руб.</span></p>
+            </div>
+          </div>
+          <div class="modal__image-block toilet">
+            <img src="img/modal/toilet.jpeg" alt="Туалет">
+            <div class="modal__image-text">
+              <div class="modal__image-title">Туалет<hr size=2px width=42px align="left" color=#ffd200></div>
+              <p>135*70 - <span>14 000 руб.</span></p>
+            </div>
+          </div>
+          <div class="modal__image-block san-unit">
+            <img src="img/modal/san-unit.jpeg" alt="Совмещенный санузел">
+            <div class="modal__image-text">
+              <div class="modal__image-title">Совмещенный санузел<hr size=2px width=42px align="left" color=#ffd200></div>
+              <p>170*210 - <span>54 000 руб.</p>
+            </div>
+          </div>
+
+          <div class="modal__price-items">
+            <h4>В стоимость работ входит</h4>
+            <li><span>Демонтаж старого покрытия стен и пола</span></li>
+            <li><span>Выравнивание стен гипсовым составом</span></li>
+            <li><span>Грунтовка стен и пола антисептиком, бетоноконтактом</span></li>
+            <li><span>Монтаж кафельной плитки на полу и стенах</span></li>
+            <li><span>Установка реечного или натяжного потолка, светильников</span></li>
+            <li><span>Монтаж двери с коробкой</span></li>
+            <ul>
+            </ul>
+          </div>
+
+
+
+
+
+        </div> <!--Left container-->
+      </div>
+  
+      <div class="modal__right-block">
+        <h3>Узнайте точную стоимость ремонта по телефону!</h3>
+        <p class="form__subtitle modal__subtitle">Заполните поля ниже - мы свяжемся с Вами</p>
+        <form action="#" class="modal__form">
+          <input type="text" class="input input-name modal__input" placeholder="Ваше имя">
+          <input type="tel" class="input input-tel modal__input" pattern="7-[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" placeholder="Тел.: 7-999-99-99-999">
+        </form>
+        <button class="button modal__button" form="form_id" type="submit">Узнать стоимость</button>
+        <p class="form__callback_text modal__callback-text">Или Вы можете перезвонить нам сами по телефону:<br>
+          <span class="form__callback_tel">+7 (8182) 42-51-31</span></p>        
+
+
+
+
+      </div> <!--Right block-->
+
+      <div class="modal__close">&#10006;</div>
+    </div>
+  </div> <!--Модальное окно-->
 </body>
 </html>
