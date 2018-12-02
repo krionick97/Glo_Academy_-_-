@@ -705,6 +705,78 @@ template {
   cursor: pointer;
 }
 
+.price-form {
+  padding: 100px 0;
+  background-image: url("../img/price-form-bg.png");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+  position: relative;
+  z-index: 1;
+}
+
+.price-form:before {
+  content: '';
+  left: 0;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  background-color: #ffc000;
+  position: absolute;
+  z-index: -1;
+}
+
+.price-form__flex-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.price-form__left-block {
+  text-align: left;
+}
+
+.price-form__left-block .price-form__title {
+  max-width: 500px;
+}
+
+.price-form__right-block {
+  text-align: center;
+}
+
+.price-form__right-block .price-form__title {
+  max-width: 356px;
+  margin: 0 auto 52px;
+}
+
+.price-form__title {
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 1.5;
+}
+
+.price-form__input {
+  width: 375px;
+}
+
+.price-form__input_name {
+  margin-bottom: 15px;
+}
+
+.price-form__button {
+  width: 375px;
+  height: 70px;
+  margin-top: 30px;
+  margin-bottom: 33px;
+}
+
+.price-form__help-inf p {
+  margin: 0 auto;
+}
+
 .modal {
   display: none;
   width: 100%;
@@ -745,7 +817,7 @@ template {
 .modal__left-block {
   width: 600px;
   height: 100%;
-  background-color: #f7f7f7;
+  background: #f7f7f7;
   padding-top: 60px;
   padding-bottom: 50px;
   display: -webkit-box;

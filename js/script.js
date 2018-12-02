@@ -19,7 +19,7 @@ $(document).ready( function(){
   //     $('.modal__dialog').removeClass('modal_visible');
   //   }
   // });
-
+  
   $('.portfolio__slider').slick({
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -51,8 +51,35 @@ $(document).ready( function(){
       // settings: "unslick"
       // instead of a settings object
     ]
-   
+    
   }); // слайдер в портфолио
 
+  $('.js-ajax').on('submit', function() {
+    // var fioVal = $('[name = fio]').val(),
+    //     phoneVal = $('[name = phone]').val();
+    
 
+    // $.ajax({
+    //   url: '/send.php',
+    //   data: {fio:fioVal, phone:phoneVal},
+    //   success: function(){
+    //     alert('Your message is sent');
+    //   }
+    // });
+    
+    
+    event.preventDefault();
+    $.ajax({
+      type: "POST",
+      url: 'mailer/smart.php',
+      data: $(this).serialize(), 
+    }).done(function(){
+      $(this).find("input").val("");
+      alert("Message is sent");
+      $('form').trigger("reset");
+    });
+
+    return false;
+  });
+  
 }); // вызов нужных функций скрипта
