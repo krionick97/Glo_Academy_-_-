@@ -705,6 +705,123 @@ template {
   cursor: pointer;
 }
 
+.price-catalog__table {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 30px;
+}
+
+.price-catalog__item {
+  max-width: 370px;
+  max-height: 410px;
+  padding-bottom: 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 2px solid #f5f5f5;
+  text-align: center;
+  -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0);
+          box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0);
+}
+
+.price-catalog__item:hover {
+  -webkit-box-shadow: 0 0px 8px 4px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 0px 8px 4px rgba(0, 0, 0, 0.2);
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.price-catalog__item-img {
+  position: relative;
+}
+
+.price-catalog__item-img:after {
+  content: '';
+  height: 0;
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#ffd200), to(rgba(255, 255, 255, 0)));
+  background-image: linear-gradient(to top, #ffd200 0%, rgba(255, 255, 255, 0) 100%);
+}
+
+.price-catalog__item-img:hover:after {
+  height: 100%;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.price-catalog__price-link {
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333333;
+  display: inline-block;
+  position: relative;
+}
+
+.price-catalog__price-link:after {
+  content: '';
+  width: 100%;
+  height: 3px;
+  background-color: #ffd200;
+  display: block;
+  position: absolute;
+  bottom: -4px;
+  z-index: -1;
+}
+
+.price-catalog__price-link:hover:after {
+  height: 13px;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+}
+
+.advantages__table {
+  margin-bottom: 97px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[9];
+      grid-template-columns: repeat(9, 1fr);
+}
+
+.advantages__table img {
+  margin: 0 auto;
+}
+
+.advantages__item {
+  width: 149px;
+  text-align: center;
+}
+
+.advantages__item p {
+  font-size: 14px;
+  line-height: 1.43;
+}
+
+.advantages__icon {
+  width: 100px;
+  height: 100px;
+  margin: 11px auto 30px;
+  border: 4px solid #ffd200;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.advantages__lower-block {
+  background-color: #ffc000;
+}
+
 .price-form {
   padding: 100px 0;
   background-image: url("../img/price-form-bg.png");

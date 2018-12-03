@@ -19,6 +19,9 @@ $(document).ready( function(){
   //     $('.modal__dialog').removeClass('modal_visible');
   //   }
   // });
+
+  new WOW().init();
+
   
   $('.portfolio__slider').slick({
     slidesToShow: 3,
