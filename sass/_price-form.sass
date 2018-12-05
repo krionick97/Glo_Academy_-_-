@@ -1,9 +1,12 @@
 .price-form
-  padding: 100px 0
+  // padding:
+    // top: 100px
+    // bottom: 93px
+  // height: 660px
   background-image: url('../img/price-form-bg.png')
   background-repeat: no-repeat
   background-position: right
-  background-size: contain
+  background-size: cover
   position: relative
   z-index: 1
   // transform: scale(1.2)
@@ -20,17 +23,64 @@
     display: flex
     // text-align: center
     justify-content: space-between
+
   &__left-block
+    // margin: 100px auto 93px
     // width: 50%
-    text-align: left
-  &__left-block  &__title
+    // text-align: left
+    h2
+      // display: inline-block
+      margin:
+        top: 100px
+        bottom: 50px
       max-width: 500px
+      // margin-bottom: 50px
+    p
+      font-size: 16px
+      margin-bottom: 70px
+  &__list
+    display: inline-block
+    // max-width: 379px
+    margin-bottom: 93px
+
+  &__list-point
+    max-width: 410px
+    margin: 0
+    display: flex
+    align-items: center
+    margin-bottom: 26px
+    p
+      margin: 0
+        // top: 6px
+        // bottom: 0
+      font:
+        size: 18px
+        weight: bold
+      line-height: 1.5
+  &__digit
+    flex-shrink: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 35px
+    height: 35px
+    box-sizing: border-box
+    border: 3px solid $text-color
+    border-radius: 50%
+    margin-right: 32px
+    p
+      display: inline-block
+      font:
+        size: 16px
+        weight: 900
+  
   &__right-block
     text-align: center
   &__right-block &__title
     max-width: 356px
-    margin: 0 auto 52px
+    margin: 100px auto 52px
   &__title
+    // margin-top: 100px
     font:
       size: 22px
       weight: bold

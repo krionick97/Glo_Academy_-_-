@@ -1,11 +1,27 @@
 @media (max-width: 1199px)
   .container
-    width: 970px
+    max-width: 970px
   .portfolio
     &__slider
       &-item
         img
           max-width: 95%
+
+  .price-form
+    &__input, &__button
+      width: 300px
+    &__left-block
+      h2
+        margin: 100px auto 50px
+        text-align: center
+      &:nth-child(1)
+        text-align: center
+    &__list-point p
+      text-align: left
+
+    
+    // h2 > p
+    //   text-align: center
 
 @media (max-width: 992px)
   .container
@@ -33,6 +49,40 @@
     &:before
       background: none
 
+  .price-form
+    &__input, &__button
+      width: 500px
+    &__flex-container
+      flex-direction: column  
+    &:before
+      content: ''
+      left: 0
+      bottom: 0
+      width: 100%
+      height: 52%
+      background-color: $primary-bg-color
+      position: absolute
+      z-index: -1
+    &__left-block
+      h2
+        margin: 100px auto 50px
+        text-align: center
+      &:nth-child(1)
+        text-align: center
+    &__list
+      margin-bottom: 93px
+    &__list-point p
+      text-align: left
+    &__right-block
+      margin-top: 50px
+      margin-bottom: 60px
+    &__form &__title
+      margin: 0 auto 52px
+
+      
+
+
+
 
 @media (max-width: 768px)
   .container
@@ -50,6 +100,10 @@
       text-align: center
   .header-text__phone
     font-size: 14px
+  .price-form
+    &__input, &__button
+      width: 400px
+
 
 @media (max-width: 480px)
   .container
@@ -79,3 +133,6 @@
   .portfolio
     &__section-title
       font-size: 24px
+  .price-form
+    &__input, &__button
+      width: 95%
