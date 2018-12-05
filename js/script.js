@@ -84,5 +84,9 @@ $(document).ready( function(){
 
     return false;
   });
+
+  document.querySelector('#callback-button').addEventListener('click', function() {
+    yaCounter51441350.reachGoal('btn'); return true;
+  });
   
 }); // вызов нужных функций скрипта
