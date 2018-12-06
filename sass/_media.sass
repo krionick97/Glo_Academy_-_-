@@ -19,6 +19,19 @@
     &__list-point p
       text-align: left
 
+  .guaranties
+    &__img-table
+      display: grid
+      grid-template-columns: 1fr 1fr
+      grid-gap: 50px
+    &__img-item
+      width: 300px
+      background-color: $light-bg-color
+      z-index: -1
+
+      img
+        height: 90%
+
     
     // h2 > p
     //   text-align: center
@@ -79,9 +92,25 @@
     &__form &__title
       margin: 0 auto 52px
 
-      
+  .price-catalog
+    &__table
+      grid-template-columns: 1fr 1fr
+
+  .advantages
+    &__arrow
+      display: none
+    &__table
+      grid-template-columns: repeat(2, 1fr)
+      grid-gap: 20px
+  .guaranties
+    &__sertif-table
+      grid-template-columns: 1fr
+      grid-gap: 50px
 
 
+
+
+    
 
 
 @media (max-width: 768px)
@@ -103,6 +132,14 @@
   .price-form
     &__input, &__button
       width: 400px
+
+  .guaranties
+    &__img-table
+      grid-template-columns: 1fr
+    &__img-item
+      margin: 0 auto
+
+
 
 
 @media (max-width: 480px)
@@ -136,3 +173,16 @@
   .price-form
     &__input, &__button
       width: 95%
+  .price-catalog
+    &__table
+      margin: 0 auto
+      grid-template-columns: 1fr
+
+  .advantages
+    &__arrow
+      display: none
+    &__table
+      grid-template-columns: 1fr
+      grid-gap: 20px
+
+

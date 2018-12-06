@@ -706,11 +706,13 @@ template {
 }
 
 .price-catalog__table {
-  display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 30px;
+  display: -ms-grid;
+  -ms-grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-gap: 30px;
 }
 
 .price-catalog__item {
@@ -721,6 +723,7 @@ template {
           box-sizing: border-box;
   border: 2px solid #f5f5f5;
   text-align: center;
+  margin: 0 auto;
   -webkit-box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0);
           box-shadow: 0 0 8px 4px rgba(0, 0, 0, 0);
 }
@@ -794,6 +797,7 @@ template {
 .advantages__item {
   width: 149px;
   text-align: center;
+  margin: 0 auto;
 }
 
 .advantages__item p {
@@ -865,19 +869,20 @@ template {
 .guaranties__sertif-table {
   display: -ms-grid;
   display: grid;
+  margin: 0 auto 41px;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 }
 
 .guaranties__sertif-block {
-  text-align: center;
-  width: 296px;
+  width: 270px;
+  margin: 0 auto;
 }
 
 .guaranties__sertif-block p {
   font-size: 18px;
   line-height: 1.33;
-  margin: 0 auto;
 }
 
 .guaranties__sertif-item {
@@ -886,7 +891,7 @@ template {
   display: flex;
   width: 270px;
   height: 360px;
-  margin: 0 auto 41px;
+  margin-bottom: 41px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border: 20px solid #f5f5f5;
@@ -1156,10 +1161,17 @@ template {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 12x;
+  text-align: left;
 }
 
-.modal__image-title hr {
+.modal__image-title:after {
+  display: block;
+  content: '';
   margin-top: 13px;
+  margin-bottom: 12px;
+  width: 42px;
+  height: 2px;
+  background: #ffd200;
 }
 
 .modal__price-items {
@@ -1170,18 +1182,35 @@ template {
 .modal__price-items h4 {
   font-size: 14px;
   font-weight: bold;
+  margin-bottom: 28px;
 }
 
-.modal__price-items li {
+.modal__price-items div {
   color: #ffd200;
-  margin-left: 14px;
-  padding-left: 6px;
+  margin-bottom: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.modal__price-items li span {
+.modal__price-items div:before {
+  display: block;
+  content: '';
+  width: 7px;
+  height: 7px;
+  left: 0;
+  right: 0;
+  background: #ffd200;
+  border-radius: 50%;
+  margin-right: 14px;
+}
+
+.modal__price-items div span {
   color: #333333;
   font-size: 14px;
-  line-height: 1.79;
 }
 
 .modal__right-block {
@@ -1324,6 +1353,21 @@ img {
   .price-form__list-point p {
     text-align: left;
   }
+  .guaranties__img-table {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+  }
+  .guaranties__img-item {
+    width: 300px;
+    background-color: #f5f5f5;
+    z-index: -1;
+  }
+  .guaranties__img-item img {
+    height: 90%;
+  }
 }
 
 @media (max-width: 992px) {
@@ -1399,6 +1443,23 @@ img {
   .price-form__form .price-form__title {
     margin: 0 auto 52px;
   }
+  .price-catalog__table {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+  .advantages__arrow {
+    display: none;
+  }
+  .advantages__table {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+  }
+  .guaranties__sertif-table {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 50px;
+  }
 }
 
 @media (max-width: 768px) {
@@ -1427,6 +1488,13 @@ img {
   }
   .price-form__input, .price-form__button {
     width: 400px;
+  }
+  .guaranties__img-table {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .guaranties__img-item {
+    margin: 0 auto;
   }
 }
 
@@ -1466,6 +1534,19 @@ img {
   }
   .price-form__input, .price-form__button {
     width: 95%;
+  }
+  .price-catalog__table {
+    margin: 0 auto;
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+  }
+  .advantages__arrow {
+    display: none;
+  }
+  .advantages__table {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    grid-gap: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

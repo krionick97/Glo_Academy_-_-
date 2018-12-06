@@ -50,22 +50,46 @@
       size: 16px
       weight: 600
     margin-bottom: 12x
-    hr
-      margin-top: 13px
+    text-align: left
+    &:after
+      display: block
+      content: ''
+      margin:
+        top: 13px
+        bottom: 12px
+        // left: 0
+      // size: 4px
+      width: 42px
+      height: 2px
+      background: $primary-color
   &__price-items
     margin-top: 53px
     padding: 0
     h4
       font-size: 14px
       font-weight: bold
-    li
+      margin-bottom: 28px
+    div
       color: $primary-color
-      margin-left: 14px
-      padding-left: 6px
+      margin-bottom: 18px
+      // position: relative
+      display: flex
+      align-items: center
+      &:before
+        display: block
+        content: ''
+        width: 7px
+        height: 7px
+        left: 0
+        right: 0
+        background: $primary-color
+        border-radius: 50%
+        margin-right: 14px
+        // z-index: 1
       span
         color: $text-color
         font-size: 14px
-        line-height: 1.79
+        // line-height: 1.79
   
   &__right-block
     width: 570px

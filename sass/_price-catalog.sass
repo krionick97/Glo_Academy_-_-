@@ -3,6 +3,10 @@
     display: grid
     grid-template-columns: 1fr 1fr 1fr
     grid-gap: 30px
+    display: -ms-grid
+    -ms-grid-template-columns: 1fr 1fr 1fr
+    -ms-grid-gap: 30px
+
   &__item
     max-width: 370px
     max-height: 410px
@@ -11,6 +15,7 @@
     border: 2px solid $light-bg-color
     // box-shadow: inset 0px 0px 0px 2px $light-bg-color
     text-align: center
+    margin: 0 auto
     box-shadow: 0 0 8px 4px rgba(0,0,0,0)
     &:hover
       box-shadow: 0 0px 8px 4px rgba(0,0,0,0.2)
