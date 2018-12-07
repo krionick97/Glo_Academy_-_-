@@ -1,5 +1,6 @@
 $(document).ready( function(){
 
+
   $('.button-callback').click(function() {
     $('.modal').addClass('modal_visible');
   });
@@ -84,6 +85,8 @@ $(document).ready( function(){
 
     return false;
   });
+
+  $('button').click(function() { return false; });
 
   document.querySelector('#callback-button').addEventListener('click', function() {
     yaCounter51441350.reachGoal('btn'); return true;
