@@ -5,10 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="shortcut icon" href="img/favicon-logo.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css"> 
   <link rel="stylesheet" href="css/animate.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
@@ -63,11 +64,11 @@
   <section class="feedback">
     <div class="container feedback-wrap">
       <div class="form">
-        <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего жилья и&nbsp;реализуем&nbsp;его!</h2>
+        <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего&nbsp;жилья и&nbsp;реализуем&nbsp;его!</h2>
         <p class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
         <form action="#" id="form_id" class="feedback__js-ajax">
-          <input type="text" name="user_name" class="input form__input" required placeholder="Ваше имя">
-          <input type="tel" name="user_phone" class="input form__input" required placeholder="Ваш телефон">
+          <input type="text" name="user_name" class="input form__input" placeholder="Ваше имя">
+          <input type="tel" name="user_phone" class="input form__input" placeholder="Ваш телефон">
         </form>
         <button class="button form__button" form="form_id" type="submit">Получить бесплатный дизайн-проект</button>
         <div class="form__help-inf">
@@ -206,12 +207,15 @@
           </div> <!--Adv__icon-->
           <p style="text-align: center">Выполняем ремонт в&nbsp;указанные сроки</p>
         </div> <!--Adv__item-->
-
       </div> <!--Advantages-table-->
+
     </div> <!--Adv__container-->
+
     <div class="advantages__lower-block wow fadeInUp" data-wow-delay="1s" style="padding-top: 99px; padding-bottom: 100px">
-      <h2 style="font-size: 32px; line-height: 1.56; text-align: center; margin: 0 auto">
-        Ремонт обойдется Вам дешевле, так как<br>мы используем качественные материалы по оптовым ценам</h2>
+      <div class="container advantages__container">        
+        <h2 style="font-size: 32px; line-height: 1.56; text-align: center; margin: 0 auto">
+          Ремонт обойдется Вам дешевле, так как<br>мы используем качественные материалы по оптовым ценам</h2>
+      </div>
     </div>
   </section> <!--Section Advantages-->
   <!--//////////////////////////////////////////////////////-->
@@ -300,7 +304,7 @@
           <div class="form price-form__form">
             <h2 class="price-form__title">Оставьте заявку на бесплатный расчет ремонта по телефону</h2>
             <p class="form__subtitle price-form__subtitle">Для этого заполните форму ниже</p>
-            <form action="#" class="feedback__js-ajax">
+            <form action="#" id="form_id_1" class="price-form__form">
               <input type="text" name="user_name" required class="input price-form__input price-form__input_name" placeholder="Ваше имя">
               <input type="tel" name="user_phone" required class="input price-form__input price-form__input_tel" placeholder="Ваш телефон">
             </form>
@@ -326,7 +330,7 @@
 
       <div class="footer__data">
         <img src="img/footer/ping-icon.png" alt="">
-        <p class="footer__inf">г. Москва <span>ул. Ленина, д. 10, корпус 2, оф. 308</span></p>
+        <p class="footer__inf">г. Москва, <span>ул.&nbsp;Ленина, д. 10, корпус 2, оф. 308</span></p>
       </div>
       <div class="footer__data">
         <img src="img/footer/clock-icon.png" alt="">

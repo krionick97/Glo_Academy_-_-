@@ -6,6 +6,7 @@
   // transform: scale(1.1)
   position: relative
   z-index: 1
+  // background-size: cover
   padding:
     top: 100px
     bottom: 100px
@@ -21,7 +22,7 @@
   &__section-title
     margin-bottom: 98px
   &__slider
-    margin-top: 0
+    margin-top: 0 auto
     &-item
       text-align: center
       // width: 372px
@@ -38,15 +39,15 @@
   position: absolute
   bottom: -68px
   &_right
-    left: 45%
+    left: 50%
     background-image: url('../portfolio/arrow-right.png')
-    transform: translateX(30px)
+    transform: translateX(-10px)
     margin-left: 30px
   &_left
-    left: 45%
+    left: 50%
     background-image: url('../portfolio/arrow-left.png')
     margin-right: 30px
-    transform: translateX(-30px)
+    transform: translateX(-60px)
 
   &:hover
     cursor: pointer
