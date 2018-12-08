@@ -1,6 +1,6 @@
+@import 'fonts'
 @import 'var'
 @import 'normalize'
-@import 'fonts'
 @import 'mixins'
 @import 'interface'
 
@@ -18,7 +18,9 @@
 @import 'modal'
 
 body
-  font-family: 'Museo Sans Light', sans-serif
+  // font-family: 'Museo Sans Light', sans-serif
+  +light
+  font-size: 16px
   color: $text-color
   overflow-x: hidden
 
@@ -30,10 +32,13 @@ img
   margin: 0 auto
 
 .section-title
-  font:
-    size: 30px
-    weight: 600
-  // +bold
+  // font-family: 'Museo Sans Bold', sans-serif
+  // font:
+  //   size: 30px
+  //   weight: 600
+  //   +bold
+  +bold
+  font-size: 30px
   line-height: 1.5
   text-align: center
   

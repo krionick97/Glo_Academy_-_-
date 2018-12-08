@@ -6,8 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Ремонт квартир</title>
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="img/favicon-logo.png" type="image/x-icon">
-  <link rel="stylesheet" href="css/style.css"> 
   <link rel="stylesheet" href="css/animate.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -63,12 +63,12 @@
 
   <section class="feedback">
     <div class="container feedback-wrap">
-      <div class="form">
+      <div class="form feedback__form">
         <h2 class="form__title">Мы бесплатно разработаем дизайн-проект Вашего&nbsp;жилья и&nbsp;реализуем&nbsp;его!</h2>
         <p class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
         <form action="" id="form_id" class="feedback__js-ajax">
-          <input type="text" name="user_name" class="input form__input" placeholder="Ваше имя">
-          <input type="tel" name="user_phone" class="input form__input" placeholder="Ваш телефон">
+          <input type="text" required name="user_name" class="input form__input" placeholder="Ваше имя">
+          <input type="tel" required name="user_phone" class="input form__input" placeholder="Ваш телефон">
         </form>
         <button class="button form__button" form="form_id" type="submit">Получить бесплатный дизайн-проект</button>
         <div class="form__help-inf">
@@ -283,7 +283,7 @@
 
             <div class="price-form__list-point">
               <div class="price-form__digit"><p>2.</p></div>
-              <p>У Вас новостройка или вторичное жильё</p>
+              <p>У Вас новостройка или вторичное жильё?</p>
             </div> <!--List-point-->
 
             <div class="price-form__list-point">
@@ -308,7 +308,7 @@
               <input type="text" name="user_name" required class="input price-form__input price-form__input_name" placeholder="Ваше имя">
               <input type="tel" name="user_phone" required class="input price-form__input price-form__input_tel" placeholder="Ваш телефон">
             </form>
-            <button class="button price-form__button" form="form_id" type="submit">Рассчитать стоимость</button>
+            <button class="button price-form__button" form="form_id_1" type="submit">Рассчитать стоимость</button>
             <div class="form__help-inf price-form__help-inf">
               <p class="price-form__manager-connect">Мы перезвоним Вам в течение&nbsp;60 секунд</p>
             </div>
@@ -324,23 +324,23 @@
     <div class="footer__map">   
       <script charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A06a264208f555348b66f5f11a60ad9c78e25fcda807c6c5b80a18495c5c78639&amp;width=100%25&amp;height=640&amp;lang=ru_RU&amp;scroll=false"></script>  
     </div> <!--Map-->
-      
-    <div class="footer__contacts">
-      <h2 class="">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h2>
 
-      <div class="footer__data">
-        <img src="img/footer/ping-icon.png" alt="">
-        <p class="footer__inf">г. Москва, <span>ул.&nbsp;Ленина, д. 10, корпус 2, оф. 308</span></p>
-      </div>
-      <div class="footer__data">
-        <img src="img/footer/clock-icon.png" alt="">
-        <p class="footer__inf">Режим работы: <span>с&nbsp;9:00 до 18:00</span></p>
-      </div>
-      <div class="footer__data">
-        <img src="img/footer/tel-icon.png" alt="">
-        <p class="footer__inf">Телефон: <span>+7&nbsp;(495)&nbsp;42-251-31</span></p>
-      </div>
-    </div> <!--Footer-contacts-->
+      <div class="footer__contacts">
+        <h2 class="">Приезжайте к нам в гости! Проконсультируем Вас по всем вопросам ремонта</h2>
+  
+        <div class="footer__data">
+          <img src="img/footer/ping-icon.png" alt="">
+          <p class="footer__inf">г. Москва, <span>ул.&nbsp;Ленина, д. 10, корпус 2, оф. 308</span></p>
+        </div>
+        <div class="footer__data">
+          <img src="img/footer/clock-icon.png" alt="">
+          <p class="footer__inf">Режим работы: <span>с&nbsp;9:00 до 18:00</span></p>
+        </div>
+        <div class="footer__data">
+          <img src="img/footer/tel-icon.png" alt="">
+          <p class="footer__inf">Телефон: <span>+7&nbsp;(495)&nbsp;42-251-31</span></p>
+        </div>
+      </div> <!--Footer-contacts-->
   </footer> <!--Footer-->
   <!--//////////////////////////////////////////////////////-->
 

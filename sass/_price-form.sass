@@ -1,8 +1,4 @@
 .price-form
-  // padding:
-    // top: 100px
-    // bottom: 93px
-  // height: 660px
   background-image: url('../img/price-form-bg.png')
   background-repeat: no-repeat
   background-position: right
@@ -19,43 +15,41 @@
     background-color: $primary-bg-color
     position: absolute
     z-index: -1
+  &__container
+    // width: 90%
   &__flex-container
     display: flex
     // text-align: center
     justify-content: space-between
 
   &__left-block
-    // margin: 100px auto 93px
-    // width: 50%
-    // text-align: left
+    // max-width: 666px
     h2
-      // display: inline-block
+      font-size: 22px
       margin:
         top: 100px
         bottom: 50px
-      max-width: 500px
+      max-width: 520px
       // margin-bottom: 50px
     p
       font-size: 16px
       margin-bottom: 70px
   &__list
     display: inline-block
-    // max-width: 379px
+    // max-width: 390px
     margin-bottom: 93px
 
   &__list-point
-    max-width: 410px
+    max-width: 460px
     margin: 0
     display: flex
     align-items: center
     margin-bottom: 26px
     p
       margin: 0
-        // top: 6px
-        // bottom: 0
-      font:
-        size: 18px
-        weight: bold
+      padding-left: 2px
+      font-size: 18px
+      +bold
       line-height: 1.5
   &__digit
     flex-shrink: 0
@@ -70,21 +64,23 @@
     margin-right: 32px
     p
       display: inline-block
-      font:
-        size: 16px
-        weight: 900
+      font-size: 16px
+      +bold
   
   &__right-block
     text-align: center
+    display: inline-block
   &__right-block &__title
     max-width: 356px
     margin: 100px auto 52px
   &__title
     // margin-top: 100px
-    font:
-      size: 22px
-      weight: bold
+    font-size: 22px
+    display: inline-block
+    +bold
     line-height: 1.5
+  &__form
+    max-width: 375px
   &__input
     width: 375px
   &__input_name
@@ -99,4 +95,6 @@
   
   &__help-inf p
     margin: 0 auto
-    // max-width: 290px
+  &__manager-connect
+    display: inline-block
+    margin: 0

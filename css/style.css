@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Museo Sans Light';
+  src: url("../fonts/Museo/Museo300-Regular.eot");
+  src: url("../fonts/Museo/Museo300-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/Museo300-Regular.woff") format("woff"), url("../fonts/Museo/Museo300-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Medium';
+  src: url("../fonts/Museo/Museo500-Regular.eot");
+  src: url("../fonts/Museo/Museo500-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/Museo500-Regular.woff") format("woff"), url("../fonts/Museo/Museo500-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Museo Sans Bold';
+  src: url("../fonts/Museo/Museo700-Regular.eot");
+  src: url("../fonts/Museo/Museo700-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/Museo700-Regular.woff") format("woff"), url("../fonts/Museo/Museo700-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -341,34 +365,11 @@ template {
   display: none;
 }
 
-@font-face {
-  font-family: 'Museo Sans Light';
-  src: url("../fonts/Museo/Museo300-Regular.eot");
-  src: url("../fonts/Museo/Museo300-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/Museo300-Regular.woff") format("woff"), url("../fonts/Museo/Museo300-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Museo Sans Medium';
-  src: url("../fonts/Museo/Museo500-Regular.eot");
-  src: url("../fonts/Museo/Museo500-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/Museo500-Regular.woff") format("woff"), url("../fonts/Museo/Museo500-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Museo Sans Bold';
-  src: url("../fonts/Museo/Museo700-Regular.eot");
-  src: url("../fonts/Museo/Museo700-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Museo/Museo700-Regular.woff") format("woff"), url("../fonts/Museo/Museo700-Regular.ttf") format("truetype");
-  font-weight: normal;
-  font-style: normal;
-}
-
 .button {
   padding: 17px 30px;
-  font-size: 13px;
-  font-weight: bold;
+  font-size: 16px;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   border: none;
   background-color: #ffd200;
   border-radius: 10px;
@@ -441,7 +442,8 @@ template {
   display: block;
   text-decoration: none;
   color: #333333;
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   font-size: 20px;
 }
 
@@ -471,8 +473,9 @@ template {
 }
 
 .main__subtitle {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   font-size: 20px;
-  font-weight: bold;
   margin-top: 0;
   margin-bottom: 69px;
 }
@@ -540,7 +543,7 @@ template {
 .feedback {
   padding: 94px 0;
   background: url("../img/design-project.png") no-repeat center left 700px;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   z-index: 1;
 }
@@ -638,13 +641,14 @@ template {
 }
 
 .form__callback_text span {
-  font-family: 'Museo Sans Bold';
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .portfolio {
   background-image: url("../portfolio/bg-image.png");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   position: relative;
   z-index: 1;
   padding-top: 100px;
@@ -689,17 +693,15 @@ template {
 .arrow_right {
   left: 50%;
   background-image: url("../portfolio/arrow-right.png");
-  -webkit-transform: translateX(-10px);
-          transform: translateX(-10px);
-  margin-left: 30px;
+  -webkit-transform: translateX(30px);
+          transform: translateX(30px);
 }
 
 .arrow_left {
   left: 50%;
   background-image: url("../portfolio/arrow-left.png");
-  margin-right: 30px;
-  -webkit-transform: translateX(-60px);
-          transform: translateX(-60px);
+  -webkit-transform: translateX(-70px);
+          transform: translateX(-70px);
 }
 
 .arrow:hover {
@@ -759,7 +761,8 @@ template {
 
 .price-catalog__price-link {
   font-size: 16px;
-  font-weight: bold;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   text-decoration: none;
   color: #333333;
   display: inline-block;
@@ -802,6 +805,8 @@ template {
 }
 
 .advantages__item p {
+  margin: 0 auto;
+  max-width: 148px;
   font-size: 14px;
   line-height: 1.43;
 }
@@ -829,25 +834,28 @@ template {
 
 .guaranties {
   padding-top: 100px;
-  padding-bottom: 232px;
+  padding-bottom: 70px;
 }
 
 .guaranties__img-table {
-  margin-bottom: 143px;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 auto 143px;
   overflow: hidden;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .guaranties__img-item {
-  display: block;
   width: 300px;
   height: 410px;
   padding: 27px 26px 0;
   position: relative;
-  margin: 0 auto;
+  margin: 0 auto 30px;
   background-color: #f5f5f5;
   z-index: 1;
 }
@@ -859,30 +867,36 @@ template {
 }
 
 .guaranties__img-item p span {
-  font-weight: bold;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .guaranties__img-item img {
   position: absolute;
   bottom: 0;
   left: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
   width: 100%;
-  height: auto;
   z-index: -1;
 }
 
 .guaranties__sertif-table {
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: 0 auto 41px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
   text-align: center;
 }
 
 .guaranties__sertif-block {
   width: 270px;
-  margin: 0 auto;
+  margin: 0 auto 30px;
 }
 
 .guaranties__sertif-block p {
@@ -903,7 +917,8 @@ template {
 }
 
 .guaranties__sertif-item img {
-  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
   margin: auto auto;
 }
 
@@ -937,9 +952,10 @@ template {
 }
 
 .price-form__left-block h2 {
+  font-size: 22px;
   margin-top: 100px;
   margin-bottom: 50px;
-  max-width: 500px;
+  max-width: 520px;
 }
 
 .price-form__left-block p {
@@ -953,7 +969,7 @@ template {
 }
 
 .price-form__list-point {
-  max-width: 410px;
+  max-width: 460px;
   margin: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -966,8 +982,10 @@ template {
 
 .price-form__list-point p {
   margin: 0;
+  padding-left: 2px;
   font-size: 18px;
-  font-weight: bold;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   line-height: 1.5;
 }
 
@@ -995,11 +1013,13 @@ template {
 .price-form__digit p {
   display: inline-block;
   font-size: 16px;
-  font-weight: 900;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .price-form__right-block {
   text-align: center;
+  display: inline-block;
 }
 
 .price-form__right-block .price-form__title {
@@ -1009,8 +1029,14 @@ template {
 
 .price-form__title {
   font-size: 22px;
-  font-weight: bold;
+  display: inline-block;
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   line-height: 1.5;
+}
+
+.price-form__form {
+  max-width: 375px;
 }
 
 .price-form__input {
@@ -1032,6 +1058,11 @@ template {
   margin: 0 auto;
 }
 
+.price-form__manager-connect {
+  display: inline-block;
+  margin: 0;
+}
+
 .footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1046,7 +1077,7 @@ template {
 
 .footer__contacts {
   padding-top: 100px;
-  padding-left: 110px;
+  padding-left: 220px;
 }
 
 .footer__contacts h2 {
@@ -1076,7 +1107,12 @@ template {
 .footer__data p {
   font-size: 16px;
   line-height: 1.63;
-  width: 140px;
+  width: 145px;
+}
+
+.footer__data p span {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
 }
 
 .modal {
@@ -1314,6 +1350,8 @@ template {
 
 body {
   font-family: 'Museo Sans Light', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
   color: #333333;
   overflow-x: hidden;
 }
@@ -1328,10 +1366,17 @@ img {
 }
 
 .section-title {
+  font-family: 'Museo Sans Bold', sans-serif;
+  font-weight: 700;
   font-size: 30px;
-  font-weight: 600;
   line-height: 1.5;
   text-align: center;
+}
+
+@media (max-width: 1400px) {
+  .price-form__container {
+    width: 90%;
+  }
 }
 
 @media (max-width: 1199px) {
@@ -1353,8 +1398,17 @@ img {
   .portfolio__slider-item img {
     max-width: 95%;
   }
+  .footer__contacts {
+    padding-left: 150px;
+  }
+  .price-form__container {
+    width: 100%;
+  }
   .price-form__input, .price-form__button {
     width: 300px;
+  }
+  .price-form__left-block {
+    max-width: 440px;
   }
   .price-form__left-block h2 {
     margin: 100px auto 50px;
@@ -1365,15 +1419,6 @@ img {
   }
   .price-form__list-point p {
     text-align: left;
-  }
-  .guaranties__img-item {
-    width: 75%;
-    height: 350px;
-    background-color: #f5f5f5;
-    z-index: -1;
-  }
-  .guaranties__img-item img {
-    height: 75%;
   }
 }
 
@@ -1431,6 +1476,9 @@ img {
     position: absolute;
     z-index: -1;
   }
+  .price-form__left-block {
+    margin: 0 auto;
+  }
   .price-form__left-block h2 {
     margin: 100px auto 50px;
     text-align: center;
@@ -1444,9 +1492,10 @@ img {
   .price-form__list-point p {
     text-align: left;
   }
-  .price-form__right-block {
+  .price-form__form {
     margin-top: 50px;
-    margin-bottom: 60px;
+    max-width: 100%;
+    margin-bottom: 50px;
   }
   .price-form__form .price-form__title {
     margin: 0 auto 52px;
@@ -1459,14 +1508,19 @@ img {
     display: none;
   }
   .advantages__table {
-    -ms-grid-columns: (1fr)[2];
-        grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
-  .guaranties__sertif-table {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 50px;
+  .advantages__item {
+    width: 200px;
+    margin-bottom: 20px;
+  }
+  .footer__contacts {
+    padding-left: 100px;
+    padding-right: 20px;
   }
 }
 
@@ -1497,13 +1551,34 @@ img {
   .price-form__input, .price-form__button {
     width: 400px;
   }
-  .guaranties__img-table {
-    -ms-grid-columns: 1fr;
-        grid-template-columns: 1fr;
-    grid-gap: 50px;
+  .form {
+    width: 100%;
   }
-  .guaranties__img-item {
-    width: 200px;
+  .form__help-inf {
+    font-size: 12px;
+  }
+  .form__callback_icon {
+    width: 20px;
+    height: 20px;
+    background-size: 10px;
+  }
+  .form__callback_text {
+    margin-left: 10px;
+    max-width: 160px;
+  }
+  .form__manager-connect {
+    max-width: 130px;
+  }
+  .form__input {
+    width: 100%;
+  }
+  .form__input:first-child {
+    margin-right: 0;
+  }
+  .form__button {
+    width: 100%;
+    font-size: 14px;
+    padding: 20px;
   }
   .footer__map {
     display: none;
@@ -1512,6 +1587,7 @@ img {
     display: block;
     text-align: cente;
     padding-left: 0;
+    padding-right: 0;
   }
   .footer__contacts h2 {
     margin: 0 auto 100px;
@@ -1542,21 +1618,6 @@ img {
   .header-text__button button {
     padding: 18px;
   }
-  .feedback .form__help-inf {
-    font-size: 12px;
-  }
-  .feedback .form__callback_icon {
-    width: 20px;
-    height: 20px;
-    background-size: 10px;
-  }
-  .feedback .form__callback_text {
-    margin-left: 10px;
-    max-width: 160px;
-  }
-  .feedback .form__manager-connect {
-    max-width: 130px;
-  }
   .portfolio__section-title {
     font-size: 24px;
   }
@@ -1572,6 +1633,8 @@ img {
     display: none;
   }
   .advantages__table {
+    display: -ms-grid;
+    display: grid;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
     grid-gap: 20px;

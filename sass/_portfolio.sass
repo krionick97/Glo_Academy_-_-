@@ -2,7 +2,7 @@
   // background-color: $light-bg-color
   background-image: url('../portfolio/bg-image.png')
   background-repeat: no-repeat
-  background-size: contain
+  background-size: cover
   // transform: scale(1.1)
   position: relative
   z-index: 1
@@ -20,6 +20,7 @@
     position: absolute
     z-index: -1
   &__section-title
+    // font-family: 'Museo Sans Bold'
     margin-bottom: 98px
   &__slider
     margin-top: 0 auto
@@ -41,13 +42,13 @@
   &_right
     left: 50%
     background-image: url('../portfolio/arrow-right.png')
-    transform: translateX(-10px)
-    margin-left: 30px
+    transform: translateX(30px)
+    // margin-right: 100px
   &_left
     left: 50%
     background-image: url('../portfolio/arrow-left.png')
-    margin-right: 30px
-    transform: translateX(-60px)
+    // margin-right: 30px
+    transform: translateX(-70px)
 
   &:hover
     cursor: pointer
