@@ -1,38 +1,46 @@
-@media (min-width: 991px) and  (max-width: 1199px)
+@media (min-width: 991px) and (max-width: 1199px)
   .modal
     &__dialog
       width: 980px
 
-@media (min-width: 768px) and  (max-width: 991px)
+@media (min-width: 768px) and (max-width: 991px)
   .modal
     &__dialog
       width: 570px
     &__left-block
       display: none
 
-@media (min-width: 576px) and  (max-width: 768px)
+@media (min-width: 576px) and (max-width: 768px)
   .modal
+    &__callback-text
+      margin: 0
+      width: 290px
     &__dialog
       width: 560px
     &__left-block
       display: none
+    &__callback-text
+      max-width: 290px
 
-@media (min-width: 320px) and  (max-width: 576px)
+@media (min-width: 320px) and (max-width: 576px)
   .modal
     &__dialog
-      width: 300px
+      max-width: 500px
     &__left-block
       display: none
     &__right-block
+      margin: 0 auto
       width: 300px
       h3
-        width: 290px
+        max-width: 290px
+        font-size: 18px
     &__subtitle
       width: 280px
     &__input
       width: 280px
     &__button
-      width: 280px
+      max-width: 280px
     &__callback-text
-      width: 280px
-
+      font-size: 14px
+      span
+        font-size: 18px      
