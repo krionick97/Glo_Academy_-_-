@@ -447,6 +447,10 @@ template {
   font-size: 20px;
 }
 
+.hidden-x1 {
+  display: none;
+}
+
 .main {
   background: #f5f5f5;
   padding: 60px 0;
@@ -712,6 +716,11 @@ template {
   cursor: pointer;
 }
 
+.price-catalog {
+  padding-top: 100px;
+  padding-bottom: 62px;
+}
+
 .price-catalog__table {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -792,6 +801,17 @@ template {
 
 .advantages {
   padding-top: 100px;
+}
+
+.advantages__main-title {
+  margin: 0 auto 59px;
+  max-width: 685px;
+}
+
+.advantages__main-subtitle {
+  font-size: 20px;
+  margin: 0 auto 58px;
+  text-align: center;
 }
 
 .advantages__table {
@@ -898,6 +918,11 @@ template {
   z-index: -1;
 }
 
+.guaranties__section-title {
+  margin: 0 auto 99px;
+  max-width: 656px;
+}
+
 .guaranties__sertif-table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -975,7 +1000,7 @@ template {
   max-width: 520px;
 }
 
-.price-form__left-block p {
+.price-form__subtitle-1 {
   font-size: 16px;
   margin-bottom: 70px;
 }
@@ -1325,12 +1350,21 @@ img {
 }
 
 @media (max-width: 768px) {
+  body .section-title {
+    font-size: 24px;
+  }
   .container {
     width: 95%;
     margin: auto;
   }
-  .hidden-xl {
+  .hidden-x3 {
     display: none;
+  }
+  .header-text__contacts {
+    margin-right: 15px;
+  }
+  .main {
+    padding-top: 40px;
   }
   .main-wrap {
     -webkit-box-orient: vertical;
@@ -1342,14 +1376,27 @@ img {
     max-width: 400px;
     margin: auto;
   }
+  .main__title {
+    font-size: 32px;
+  }
   .main__title, .main__subtitle {
     text-align: center;
   }
   .header-text__phone {
     font-size: 14px;
   }
+  .price-form__left-block h2 {
+    margin-top: 50px;
+    margin-bottom: 60px;
+  }
+  .price-form__subtitle-1 {
+    margin-bottom: 40px;
+  }
   .price-form__input, .price-form__button {
     width: 400px;
+  }
+  .price-form__form {
+    margin-top: 0;
   }
   .form {
     width: 100%;
@@ -1379,6 +1426,36 @@ img {
     width: 100%;
     font-size: 14px;
     padding: 20px;
+  }
+  .portfolio {
+    padding-top: 60px;
+    padding-bottom: 110px;
+  }
+  .portfolio__section-title {
+    margin-bottom: 40px;
+  }
+  .price-catalog {
+    padding-top: 60px;
+    padding-bottom: 30px;
+  }
+  .advantages {
+    padding-top: 40px;
+  }
+  .advantages__main-title {
+    margin-bottom: 40px;
+  }
+  .advantages__main-subtitle {
+    margin-bottom: 38px;
+  }
+  .advantages__lower-block {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .guaranties__img-table {
+    margin: 0 auto 50px;
+  }
+  .guaranties__section-title {
+    margin: 0 auto 40px;
   }
   .guaranties__sertif-table {
     margin-bottom: 0;
@@ -1412,20 +1489,33 @@ img {
 }
 
 @media (max-width: 480px) {
+  body .section-title {
+    font-size: 22px;
+  }
   .container {
     width: 95%;
   }
   .header-logo {
-    width: 100px;
+    width: 120px;
+  }
+  .header-text__contacts {
+    margin-right: 15px;
   }
   .header-text__phone {
-    font-size: 12px;
+    font-size: 14px;
   }
   .header-text__city {
-    font-size: 10px;
+    font-size: 12px;
   }
-  .header-text__button button {
-    padding: 18px;
+  .header__button {
+    padding: 14px;
+    font-size: 14px;
+  }
+  .main__title {
+    font-size: 26px;
+  }
+  .form__title {
+    font-size: 21px;
   }
   .portfolio__section-title {
     font-size: 24px;
@@ -1452,16 +1542,20 @@ img {
 
 @media (max-width: 400px) {
   .header-logo {
-    width: 60px;
+    width: 100px;
   }
-  .header-text__button:first-child {
-    font-size: 14px;
+  .header__button {
+    padding: 12px;
+    font-size: 12px;
   }
   .header-text__contacts {
-    margin-right: 14px;
+    margin-right: 6px;
   }
-  .header-text__phone {
-    font-size: 10px;
+  .hidden-x2 {
+    display: none;
+  }
+  .hidden-x1 {
+    display: inline-block;
   }
 }
 
