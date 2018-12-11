@@ -1,6 +1,5 @@
 $(document).ready( function(){
 
-
   $('.button-callback').click(function() {
     $('.modal').addClass('modal_visible');
   });
@@ -58,6 +57,7 @@ $(document).ready( function(){
     
   }); // слайдер в портфолио
 
+
   $('.js-ajax').on('submit', function() {
     // var fioVal = $('[name = fio]').val(),
     //     phoneVal = $('[name = phone]').val();
@@ -85,11 +85,13 @@ $(document).ready( function(){
 
     return false;
   });
-
+  
+  $('.input-phone').mask('+7 (999) 99-999-99');
   
   document.querySelector('#callback-button').addEventListener('click', function() {
     yaCounter51441350.reachGoal('btn'); return true;
   });
   $('.price-catalog__price-link').click(function() { return false; });
   
+
 }); // вызов нужных функций скрипта

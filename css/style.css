@@ -648,9 +648,11 @@ template {
   line-height: 1.6;
 }
 
-.form__callback_text span {
+.form__callback_text a {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-decoration: none;
+  color: #333333;
 }
 
 .portfolio {
@@ -1152,9 +1154,11 @@ template {
   width: 145px;
 }
 
-.footer__data p span {
+.footer__data p a {
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-decoration: none;
+  color: #333333;
 }
 
 body {
@@ -1770,10 +1774,12 @@ iframe {
   line-height: 1.5;
 }
 
-.modal__callback-text span {
+.modal__callback-text a {
   font-size: 20px;
   font-family: 'Museo Sans Bold', sans-serif;
   font-weight: 700;
+  text-decoration: none;
+  color: #333333;
 }
 
 @media (max-width: 1200px) {

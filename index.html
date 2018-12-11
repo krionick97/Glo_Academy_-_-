@@ -14,6 +14,7 @@
   <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="js/script.js"></script>
   <script src="js/wow.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
 </head>
 <body>
   <header class="header">
@@ -68,14 +69,14 @@
         <p class="form__subtitle">Оставьте заявку на разработку бесплатного дизайн-проекта!</p>
         <form action="#" id="form_id" class="feedback__js-ajax">
           <input type="text" required name="user_name" class="input form__input" placeholder="Ваше имя">
-          <input type="tel" required name="user_phone" class="input form__input" placeholder="Ваш телефон">
+          <input type="tel" required name="user_phone" class="input input-phone form__input" placeholder="Ваш телефон">
         </form>
         <button class="button form__button" form="form_id" type="submit">Получить бесплатный дизайн-проект</button>
         <div class="form__help-inf">
           <p class="form__manager-connect">Наш менеджер перезвонит Вам в течение 60 секунд</p>
           <div class="form__callback">
             <div class="form__callback_icon"></div>
-            <p class="form__callback_text">или перезвоните нам сами<br><span class="form__callback_tel">+7 (495) 42-251-31</span></p>
+            <p class="form__callback_text">или перезвоните нам сами<br><a href="tel:+74954225131" class="form__callback_tel">+7 (495) 42-251-31</a></p>
           </div>
         </div>
       </div>
@@ -305,7 +306,7 @@
             <p class="form__subtitle price-form__subtitle">Для этого заполните форму ниже</p>
             <form action="#" id="form_id_1" class="price-form__form">
               <input type="text" name="user_name" required class="input price-form__input price-form__input_name" placeholder="Ваше имя">
-              <input type="tel" name="user_phone" required class="input price-form__input price-form__input_tel" placeholder="Ваш телефон">
+              <input type="tel" name="user_phone" required class="input input-phone price-form__input price-form__input_tel" placeholder="Ваш телефон">
             </form>
             <button class="button price-form__button" form="form_id_1" type="submit">Рассчитать стоимость</button>
             <div class="form__help-inf price-form__help-inf">
@@ -338,7 +339,7 @@
         </div>
         <div class="footer__data">
           <img src="img/footer/tel-icon.png" alt="">
-          <p class="footer__inf">Телефон: <span>+7&nbsp;(495)&nbsp;42-251-31</span></p>
+          <p class="footer__inf">Телефон: <a class="footer__tel" href="tel:+74954225131">+7&nbsp;(495)&nbsp;42-251-31</a></p>
         </div>
       </div> <!--Footer-contacts-->
   </footer> <!--Footer-->
@@ -390,15 +391,11 @@
         <p class="form__subtitle modal__subtitle">Заполните поля ниже - мы свяжемся с Вами</p>
         <form action="#" class="modal__form" id="form_id_">
           <input type="text" class="input input-name modal__input" required placeholder="Ваше имя">
-          <input type="tel" class="input input-phone modal__input" required placeholder="Ваш телефон">
+          <input type="tel" id="telephone" class="input input-phone modal__input" required placeholder="Ваш телефон">
         </form>
         <button class="button modal__button" id="callback-button" form="form_id_" type="submit">Узнать стоимость</button>
         <p class="modal__callback-text">Или Вы можете перезвонить нам сами по телефону:<br>
-          <span class="form__callback_tel">+7 (8182) 42-51-31</span></p>        
-
-
-
-
+          <a class="form__callback_tel" href="tel:+78182425131">+7 (8182) 42-51-31</a></p>      
       </div> <!--Right block-->
 
       <div class="modal__close">&#10006;</div>
